@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { jwtDecode } from "jwt-decode";
 import axios from 'axios';
 
-const API = "http://localhost:5000/api/tasks";
+const API = "https://task-maneger-jstp.onrender.com";
 
 function TaskManager() {
   const [tasks, setTasks] = useState([]);

@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
 function Register() {
-  const [username, setUsername] = useState(""); // Added username state
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ function Register() {
       return;
     }
 
-    // Check if email contains "@" and "."
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) {
       alert("Please enter email");
@@ -30,7 +29,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", {
+      const res = await axios.post("https://task-maneger-jstp.onrender.com/api/auth/register", {
         email,
         password,
         username
@@ -39,7 +38,7 @@ function Register() {
       localStorage.setItem("token", res.data.token);
       navigate("/");
     } catch (err) {
-      // Show backend error like "User already exists"
+
       alert(err.response?.data?.message || "Registration failed");
     }
   };
