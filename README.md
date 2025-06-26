@@ -61,7 +61,7 @@ npm install axios react-router-dom bootstrap jwt-decode
 </pre>
 
 <h1>Deployed on</h1>
-<h2>Frontend - https://task-maneger-cyan.vercel.app</h2>
+<h2>Frontend - https://task-maneger-cyan.vercel.app/</h2>
 <h2>Backend-  https://backend-task-x8ax.onrender.com</h2>
 
 <h2>Features</h2>
