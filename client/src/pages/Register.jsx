@@ -29,7 +29,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post("https://task-maneger-jstp.onrender.com/api/auth/register", {
+      const res = await axios.post("https://task-backend-vviq.onrender.com/api/auth/register", {
         email,
         password,
         username
